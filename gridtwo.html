@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      @media only screen and(max-width: 700px) {
+        [class*="col"] {
+          width: 100%;
+          color: red;
+          clear: both;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .col-one {
+        width: 25%;
+      }
+      .col-two {
+        width: 25%;
+      }
+      .col-three {
+        width: 25%;
+      }
+      .col-four {
+        width: 25%;
+      }
+      [class*="col-"] {
+        float: left;
+        background-color: lightgreen;
+        display: block;
+        padding: 10px;
+      }
+      [class*="col-"]:nth-child(odd) {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="col-one">One</div>
+    <div class="col-two">Two</div>
+    <div class="col-three">Three</div>
+    <div class="col-four">Four</div>
+  </body>
+</html>

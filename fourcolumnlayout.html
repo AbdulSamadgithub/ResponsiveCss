@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .aone {
+        width: 25%;
+      }
+      .atwo {
+        width: 50%;
+      }
+      .athree {
+        width: 25%;
+      }
+
+      [class*="a"] {
+        background-color: lightblue;
+        display: block;
+        padding: 5px;
+        border: 1px solid black;
+        float: left;
+      }
+      [class*="a"] a {
+        display: block;
+        text-decoration: none;
+        color: darkred;
+        padding: 2px;
+        background-color: lightyellow;
+      }
+
+      @media only screen and (max-width: 500px) {
+        [class*="a"] {
+          width: 100%;
+          clear: both;
+          margin-bottom: 2px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="aone">
+      divone
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+      <a href="./box-sizing.html">box-sizing</a>
+    </div>
+    <div class="atwo">
+      Div Two
+      <h1 style="background-color: white;">fourcolumn Layout</h1>
+      <p>
+        This html file is about the grid view thing in which the goal is to make
+        everything
+      </p>
+    </div>
+    <div class="athree">
+      divthree
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+      <a href="./gridone.html">grid one</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 90%;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid One</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .col-one {
+        width: 20%;
+      }
+      .col-two {
+        width: 60%;
+        height: auto;
+      }
+      .col-three {
+        width: 20%;
+      }
+      div[class*="col-"] {
+        float: left;
+        padding: 10px;
+      }
+      div[class*="col-"] p {
+        text-align: justify;
+        font-size: xx-large;
+        word-wrap: break-word;
+      }
+      div[class*="col-"] a {
+        width: 90%;
+        display: block;
+        text-decoration: none;
+        font-size: large;
+        padding: 5px;
+        background-color: lightseagreen;
+        border: 2px solid blue;
+        word-wrap: ;
+        overflow: hidden;
+      }
+      div[class*="col-"] a:hover {
+        background-color: lightgreen;
+      }
+      div[class*="col-"]:nth-child(odd) {
+        background-color: lightblue;
+      }
+      div[class*="col-"]:nth-child(even) {
+        background-color: lightgreen;
+      }
+      div[class="col-two"] img {
+        max-width: 100%;
+        max-height: auto;
+        float: right;
+        border-radius: 10px;
+        padding: 5px;
+      }
+      footer {
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body style="height: 90%;">
+    <header>
+      <div>
+        <h1 style="text-align: center; padding: 10px; border: 1px solid black;">
+          Header
+        </h1>
+      </div>
+    </header>
+    <div class="col-one">
+      links
+      <a href="box-sizing.html">boxsizing</a>
+      <a href="box-sizing.html">boxsizing</a>
+      <a href="box-sizing.html">boxsizing</a>
+      <a href="box-sizing.html">boxsizing</a>
+      <a href="box-sizing.html">boxsizing</a>
+      <a href="box-sizing.html">boxsizing</a>
+    </div>
+    <div class="col-two">
+      <img src="img/imageeight.jpg" alt="imageeight" />
+      <img src="img/imageeight.jpg" alt="imageeight" />
+      <img src="img/imageeight.jpg" alt="imageeight" />
+    </div>
+    <div class="col-three">
+      about
+      <a href="box-sizing.html">boxsizing</a>
+      <a href="box-sizing.html">boxsizing</a>
+      <a href="box-sizing.html">boxsizing</a>
+      <a href="box-sizing.html">boxsizing</a>
+      <a href="box-sizing.html">boxsizing</a>
+      <a href="box-sizing.html">boxsizing</a>
+      <a href="box-sizing.html">boxsizing</a>
+      <a href="box-sizing.html">boxsizing</a>
+    </div>
+  </body>
+</html>

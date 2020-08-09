@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Container</title>
+    <style>
+      .container {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 80px 80px 80px 80px ; 
+        grid-template-rows: 10% 10% 10% 10%;
+        background-color: rgba(139, 189, 206, 1);
+        gap: 20px 10px;
+        border: 1px solid black;
+        padding: 5px;
+      }
+      .container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px;
+      }
+      @media only screen and(max-width: 700px) {
+        .container {
+          background-color: lightgreen;
+          grid-template-columns: 50% 50%;
+          grid-template-rows: 12.4% 12.4% 12.4% 12.4% 12.4% 12.4% 12.4% 12.4% ;
+        }
+      }
+    </style>
+  </head>
+    <div class="container">
+      <div >itemone</div>
+      <div >itemtwo</div>
+      <div >itemthree</div>
+      <div >itemfour</div>
+      <div >itemone</div>
+      <div >itemtwo</div>
+      <div >itemthree</div>
+      <div >itemfour</div>
+      <div >itemone</div>
+      <div >itemtwo</div>
+      <div >itemthree</div>
+      <div >itemfour</div>
+      <div >itemone</div>
+      <div >itemtwo</div>
+      <div >itemthree</div>
+      <div >itemfour</div>
+    </div>
+  </body>
+</html>
